@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/online"
+        android:icon="@drawable/online_1"
+        android:title="online"/>
+    <item android:id="@+id/offline"
+        android:icon="@drawable/offline"
+    android:title="Offline"/>
+    <item android:id="@+id/onStage"
+        android:icon="@drawable/onstage"
+    android:title="On Stage"/>
+    <item android:id="@+id/offStage"
+        android:icon="@drawable/off_stage"
+        android:title="Offstage"/>
+    <item android:id="@+id/submission"
+        android:icon="@drawable/submission"
+        android:title="Submission"/>
+</menu>
