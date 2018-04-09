@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#00032B"
+    android:layout_height="match_parent"
+    tools:context="com.l.version.splash"
+    android:theme="@style/AppTheme.NoActionBar"
+    android:weightSum="1">
+
+
+  <ImageView
+      android:id="@+id/version_"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:foregroundGravity="center"
+      app:srcCompat="@drawable/new_version_1"
+
+      android:layout_alignParentTop="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_marginTop="87dp" />
+  <!--ImageView
+      android:id="@+id/visnoetic_"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:srcCompat="@drawable/new_visnoetic_2"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentBottom="true" /-->
+
+</RelativeLayout>

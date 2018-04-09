@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--EditText
+         android:id="@+id/destination"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:ems="10"
+         android:text="Destination"
+         android:textColor="#ffffff" /->
+
+     <Button
+         android:id="@+id/search"
+         android:layout_gravity="center"
+         android:gravity="center"
+         android:layout_width="50dp"
+         android:layout_height="wrap_content"
+         android:text="Go"
+         /-->
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.l.version.map_activity"
+        tools:layout="@layout/activity_map_activity" />
+
+</LinearLayout>

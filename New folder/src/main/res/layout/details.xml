@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView android:id="@+id/from"
+    android:layout_width="match_parent"
+    android:background="#303c37"
+    android:layout_height="150dp"
+    android:gravity="center"
+    android:layout_marginTop="20dp"
+    android:layout_centerHorizontal="true"
+    android:foregroundGravity="center"
+    android:textSize="20dp"
+    android:text="fdsjhsdnfbdf"
+    android:textColor="#fcbcc7"
+    android:layout_centerVertical="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
