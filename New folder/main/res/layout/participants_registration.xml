@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#030C37"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:lineSpacingExtra="12sp"
+                android:text="Submit Your Detail"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:typeface="normal"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/participants"
+                style="@style/text"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="Number of Participants" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="1"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="62dp">
+
+                <EditText
+                    android:id="@+id/participant_1"
+                    style="@style/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:ems="10"
+                    android:hint="Participant 1"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/contact_1"
+                    style="@style/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:maxLength="10"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/participant_1"
+                    android:hint="Contact" />
+
+                <EditText
+                    android:id="@+id/gender_1"
+                    style="@style/text"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:hint="M/F"
+                    android:layout_below="@+id/contact_1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="6dp" />
+            </RelativeLayout>
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="1"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="62dp">
+
+                <EditText
+                    android:id="@+id/participant_2"
+                    style="@style/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:ems="10"
+                    android:hint="Participant 2"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/contact_2"
+                    style="@style/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+android:maxLength="10"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/participant_2"
+                    android:hint="Contact" />
+
+                <EditText
+                    android:id="@+id/gender_2"
+                    style="@style/text"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:hint="M/F"
+                    android:layout_below="@+id/contact_2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="6dp" />
+            </RelativeLayout>
+            <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="62dp">
+
+            <EditText
+                android:id="@+id/participant_3"
+                style="@style/text"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:ems="10"
+                android:hint="Participant 3"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/contact_3"
+                style="@style/text"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+android:maxLength="10"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/participant_3"
+                android:hint="Contact" />
+
+            <EditText
+                android:id="@+id/gender_3"
+                style="@style/text"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:hint="M/F"
+                android:layout_below="@+id/contact_3"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6dp" />
+        </RelativeLayout>
+            <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="62dp">
+
+            <EditText
+                android:id="@+id/participant_4"
+                style="@style/text"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:ems="10"
+                android:hint="Participant 4"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/contact_4"
+                style="@style/text"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+android:maxLength="10"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/participant_4"
+                android:hint="Contact" />
+
+            <EditText
+                android:id="@+id/gender_4"
+                style="@style/text"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:hint="M/F"
+                android:layout_below="@+id/contact_4"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6dp" />
+        </RelativeLayout>
+            <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="62dp">
+
+            <EditText
+                android:id="@+id/participant_5"
+                style="@style/text"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:ems="10"
+                android:hint="Participant 5"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/contact_5"
+                style="@style/text"
+                android:maxLength="10"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/participant_5"
+                android:hint="Contact" />
+
+            <EditText
+                android:id="@+id/gender_5"
+                style="@style/text"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:hint="M/F"
+                android:layout_below="@+id/contact_5"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6dp" />
+
+            </RelativeLayout>
+            <Button
+                android:id="@+id/run"
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="Submit"
+                android:layout_below="@+id/gender_5"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/contact_5"
+                android:layout_alignEnd="@+id/contact_5" />
+
+           </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
