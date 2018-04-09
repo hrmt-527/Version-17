@@ -1,0 +1,455 @@
+/******* main wrappers *******/ 
+
+.main-wrapper{
+	padding: 1% 0 0px 0;
+	height: 100vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+#particle-canvas {
+	position: absolute !important;
+	width: 95%;
+	height: 95%;
+	z-index: 0;
+}
+#particle-canvas div{
+	background: #fff !important;
+}
+.wrapper{
+	height: 87%;
+	padding: 2% 15px 0px 15px;
+}
+
+
+/********** welcome page css **************/
+
+.myfont {
+	 font-family: Iceland;
+	 font-size: 20px;
+	font-variant: normal;
+	font-weight: 400;
+	
+}
+.mybtn {
+	background-color: #2A4460;border:1px solid #000;color: white ; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.mybtn:hover {
+	background-color: #002854;border:1px solid #000;color: white;
+	-webkit-box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.75);
+}
+.box {
+	
+	background-color: #2a4460;
+background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+
+  
+ text-align: center;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ -webkit-transition: box-shadow 1s; /* For Safari 3.1 to 6.0 */
+    transition: box-shadow 1s;
+}	-webkit-box-shadow: 0px 0px 18px 2px rgba(17, 117, 229,1);
+-moz-box-shadow: 0px 0px 18px 2px rgba(17, 117, 229,1);
+box-shadow: 0px 0px 18px 5px rgba(17, 117, 229,1);
+.box:hover{
+	
+ -webkit-transition: box-shadow 1s; /* For Safari 3.1 to 6.0 */
+    transition: box-shadow 1s;
+color: #fff;
+font-weight: bolder;
+    background-color: #000;
+background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+	
+}
+
+
+
+
+.mytrophy:hover {
+	text-shadow: 0 0 15px #1175E5;
+-webkit-text-shadow: 0px 0px 18px 2px rgba(227, 69, 28,1);
+-moz-text-shadow: 0px 0px 18px 2px rgba(227, 69, 28,1);
+text-shadow: 0px 0px 18px 5px rgba(227, 69, 28,1);
+ -webkit-transition: text-shadow 1s; /* For Safari 3.1 to 6.0 */
+    transition: text-shadow 1s;
+}
+.main-logo {
+	
+    width: 50%;
+}
+
+#live-events-container{
+	position: fixed;
+	right: 0px;
+	top: 70px;
+	z-index: 10000;
+}
+#live-events-container #live-events-placeholder {
+	position: relative; 
+
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 0;
+	background-color: #2a4460;
+	padding: 2px 7px;
+	font-weight: bold;
+	font-size: 14px;
+	opacity: .9;
+	color: #1175e5;
+
+	transform-origin: right bottom;
+
+	-moz-transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	transform: rotate(270deg);
+	cursor: pointer;
+	text-transform: uppercase;
+
+	top: -4vh; 
+
+	display: inline-block; 
+
+	vertical-align: top;
+}
+#live-events-container #live-events-placeholder #live-events-widget-count {
+	position: absolute;
+	left: 90px;
+	top: -11px;
+	padding: 1px 4px;
+	color: #fff;
+	background: green;
+	z-index: 1;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: bold;
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+#live-events-container #live-events-loading {
+	position: relative;
+	background-color: #212121;
+	display: inline-block;
+	vertical-align: top;
+	width: 0;
+	box-sizing: border-box;
+	-webkit-border-radius: 0 0 0 3px;
+	-moz-border-radius: 0 0 0 3px;
+	border-radius: 0;
+	overflow-y: auto;
+	min-height:13.7vh;
+	overflow:hidden; 
+}
+#live-events-container #live-events-loading a:hover{
+	color: #1175e5;
+} 
+#live-events-container .live-events-widget-container {
+	padding: 20px;
+	border-bottom: 1px dashed #2a4460;
+}
+
+
+
+
+
+#tshirt-container{
+	position: fixed;
+	right: 3px;
+	top: 470px;
+	z-index: 10000;
+}
+
+#tshirt-container #tshirt-placeholder {
+	position: relative; 
+
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 0;
+	background-color: #2a4460;
+	padding: 2px 7px;
+	font-weight: bold;
+	font-size: 14px;
+	opacity: 1;
+	color: #1175e5;
+
+	transform-origin: right bottom;
+
+	-moz-transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	transform: rotate(270deg);
+	cursor: pointer;
+	text-transform: uppercase;
+
+	top: -5vh; 
+
+	display: inline-block; 
+
+	vertical-align: top;
+}
+
+
+/********** format css ***************/
+
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+     
+    
+
+  
+    color:#fff;
+    background-color: rgba(0, 0, 0, 0.66);
+    /*
+     color: #1175e5; 
+    background-color: #2a4460;
+    */border: 1px solid #000;
+    border-bottom-color: transparent;
+}
+
+.panel-heading{
+background-color:rgba(0,0,0,0.2);
+}
+.tab-content
+{	
+	/*
+
+	background-color: #2a4460;
+	*/
+	background-color: rgba(0, 0, 0, 0.66);
+color:#fff;
+border-radius: 3px;
+
+}
+
+.info-div-head-active,.info-div-head-inactive{
+	display: inline-block;
+	font-family:  CenturyGothicBold;
+	cursor: pointer;
+
+	transform: skewX(-45deg);
+	padding: 5px 0 5px 0;
+	line-height: 20px;
+}
+.info-div-head-active p{
+	color: #212121;
+	transform: skewX(45deg);
+	font-size: 30px;
+	margin: 0;
+
+}
+.info-div-head-inactive p{
+	color: #1175e5;
+	transform: skewX(45deg);
+	font-size: 30px;
+	margin: 0;
+}
+.info-div-head-active div{
+	background-color: ;
+}
+.info-div-head-inactive div{
+	background-color: ;
+}
+.info-div-body{
+	padding: 25px;
+	overflow: auto;
+	font-family: 'Century Gothic';
+	border-top: 1px solid rgba(252, 244, 101, 0.6);
+	border-bottom: 1px solid rgba(252, 244, 101, 0.6);
+	color:rgba(252, 244, 101, 0.4);
+	height: 55%;
+	text-align: justify;
+	font-size: 2.2vh;
+}
+
+.left-side-div{
+	padding-top: 4%
+			height: 500.3542px;
+}
+.right-side-div{
+			height: 500.3542px;
+	padding-top: 4%;
+}
+.right-side-div .line-div{
+	margin: 5px 9px 5px 0px;
+	border-right: 1.5px solid #1175e5;
+	height: 18vh;
+}
+.right-side-div i{
+	color:#1175e5; 
+	font-size:20px;
+	margin-top: 6px;
+}
+
+
+
+
+
+/***** common css ****/
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+a:hover, a:visited, a:focus,a:active, a:focus:active{
+	text-decoration:  none;
+	color: inherit;
+	outline:none!important;
+	border:none;
+}
+.float-left{
+	float: left;
+}
+.italic{
+	font-style: italic;
+}
+.capitalize{
+	text-transform: capitalize;
+}
+.active {
+	color: ;
+}
+.active_tab {
+	background-color:  ;
+}
+.active-black{
+	color: black;
+}
+.not-active{
+	color: ;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+.lowercase{
+	text-transform: lowercase;
+}
+.center-align{
+	text-align: center;
+}
+.right-align{
+	text-align: right;
+}
+.modal-content{
+	border-radius: 0;
+	background-color: #8E8A42;
+}
+.modal-header{
+	border-bottom: none;
+	text-align: center;
+}
+.modal-title{
+	color: #1175e5;
+	font-weight: 800;
+	font-size: 3vh;
+
+}
+.white-text{
+	color: white;
+}
+.bold{
+	font-weight: 700;
+}
+.hide{
+	display: none;
+}
+.margin-top-0{
+	margin-top: 0
+}
+.margin-bottom-0{
+	margin-bottom: 0
+}
+.margin-right-0{
+	margin-right: 0
+}
+.margin-left-0{
+	margin-left: 0
+}
+.padding-left-0{
+	padding-left: 0
+}
+.padding-right-0{
+	padding-right: 0
+}
+.padding-top-0{
+	padding-top: 0
+}
+.padding-bottom-0{
+	padding-bottom: 0
+}
+/*** media queries *****/
+
+@media only screen and (max-width: 767px) {
+
+	.info-div-head-active,.info-div-head-inactive{
+		margin-top: 1%;
+	}
+	.left-side-div,.right-side-div,.hide_mobile{
+
+		display: none;
+	}
+	
+	
+	.header-tabs{
+		float: none;
+		text-align: center;
+		width: 100%;
+}
+	.info-div-body{
+		height: auto !important;
+	}
+	.expanse-wrapper{
+		padding: 4% 5%;
+	}
+	.info-div-head-active p,.info-div-head-inactive p{
+		font-size: 3vh;
+	}
+	.main-dots,.main-lines{
+		display: none;
+	}
+	.main-logo{
+		    left: 20vw;
+	}
+	.expanse-events .row{
+		margin-right: 0
+	}
+	
+
+}
+@media (min-width: 768px){
+
+}
+@media (min-width: 768px) and (max-width: 969px){
+	
+}
+@media (min-width: 768px) and (max-width: 1024px){
+	.info-div-head-active p,.info-div-head-inactive p{
+		font-size: 3vh;
+	}
+	
+}
+@media (min-width: 768px){
+
+}
+
+
+@media only screen and (max-width: 481px) {
+	.hide_mobile{
+		display: none;
+	}
+@media only screen and (max-width: 767px){
+	.newsticker {
+		display:none;
+	}
+	
+}
