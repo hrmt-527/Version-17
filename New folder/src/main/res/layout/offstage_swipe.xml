@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_centerInParent="true"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_gravity="end"
+                android:textStyle="bold"
+
+                android:id="@+id/swipe"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:id="@+id/event_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:textSize="25sp"
+                android:layout_below="@+id/swipe"
+                android:textStyle="bold"
+                android:textColor="#030c37"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:foregroundGravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:id="@+id/event_image"
+                android:layout_width="313dp"
+                android:layout_below="@+id/event_name"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_weight="0.51"
+                android:background="#ffffff"
+                android:foregroundGravity="center" />
+
+            <TextView
+                android:id="@+id/tagline"
+                android:layout_below="@+id/event_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="casual"
+                android:foregroundGravity="center"
+                android:textAlignment="center"
+                android:textColor="#304775"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:id="@+id/information"
+                android:layout_below="@+id/tagline"
+                android:text="INFORMATION"
+                android:background="#030c37"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:id="@+id/description"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_below="@+id/information"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#303478"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_below="@+id/description"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/rules_"
+                android:background="#030c37"
+                android:textColor="#ffffff"
+                android:text="RULES"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/rules"
+                android:layout_below="@+id/rules_"
+                android:layout_width="340dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#303478"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:id="@+id/criteria"
+                android:layout_below="@+id/rules"
+                android:textStyle="bold"
+                android:background="#030c37"
+                android:textColor="#ffffff"
+                android:text="JUDGING CRITERIA"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/judging"
+                android:layout_below="@+id/criteria"
+                android:layout_width="340dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#303478"
+                android:layout_marginBottom="20dp"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

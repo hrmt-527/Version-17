@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/fab_margin"
+    android:paddingLeft = "@dimen/fab_margin"
+    android:layout_centerHorizontal="true"
+    android:paddingEnd="@dimen/fab_margin"
+    android:paddingRight="@dimen/fab_margin"
+    android:paddingStart="@dimen/fab_margin"
+    android:id="@+id/registration"
+    android:background="#030C37"
+    tools:context="com.l.version.login">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+        android:layout_width="312dp"
+        android:layout_height="500dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#030c37"
+        android:orientation="vertical"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <TextView
+            android:id="@+id/form"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_weight="0.09"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="REGISTRATION FORM"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="45dp" />
+
+        <EditText
+            android:id="@+id/college"
+            style="@style/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:ems="10"
+            android:hint="College Name"
+            android:inputType="textPersonName"
+            android:textColor="#F31A0D" />
+
+
+        <EditText
+            android:id="@+id/name"
+            style="@style/text"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/contact"
+            android:layout_marginBottom="112dp"
+            android:ems="10"
+            android:hint="College Username"
+            android:inputType="textPersonName"
+            android:textColor="#F31A0D" />
+
+        <EditText
+            android:id="@+id/contact"
+            style="@style/text"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/email"
+            android:layout_marginBottom="112dp"
+            android:ems="10"
+            android:maxLength="10"
+            android:hint="Contact"
+            android:inputType="textPersonName"
+            android:textColor="#F31A0D"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/email"
+            style="@style/text"
+            android:layout_above="@+id/password"
+            android:layout_marginBottom="112dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#F31A0D"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/text"
+            android:layout_above="@+id/confirm_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#F31A0D" />
+
+        <EditText
+            android:id="@+id/confirm_password"
+            style="@style/text"
+            android:layout_above="@+id/button"
+            android:layout_marginBottom="112dp"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textColor="#F31A0D"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Button"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:text="Register"
+            android:textAllCaps="false" />
+            </LinearLayout>
+        </ScrollView>
+</ScrollView>
