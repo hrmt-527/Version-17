@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/registration"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:weightSum="1">
+
+    <!--ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/e_view"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp" /-->
+    <!--WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contact"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" /-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="For Pass Key"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:id="@+id/passkey_info" />
+
+    <TableLayout
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:background="#030c37"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/passkey_info"
+        android:id="@+id/pass1">
+        <TableRow>
+            <TextView
+                android:layout_width="200dp"
+                android:text="Vikash Magnani"
+
+                android:textColor="#ffffff"
+                android:textSize="20dp"/>
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:background="#030c37"
+                android:text="Hrithik Chouhan"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:id="@+id/pass2"
+
+        android:layout_marginLeft="200dp"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+        <TableRow>
+            <TextView
+                android:text="9571484108"
+                android:textColor="#030c37"
+                android:layout_width="200dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"/>
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="200dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:text="9425070830"
+                android:textColor="#030c37"
+                android:textSize="20dp" />
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textSize="30dp"
+        android:text="Event Related Queries"
+        android:gravity="center"
+        android:foregroundGravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/pass1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="33dp"
+        android:layout_marginEnd="33dp" />
+
+    <TableLayout
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:id="@+id/event1"
+        android:background="#030c37"
+        android:layout_alignTop="@+id/event2"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="200dp"
+                android:text="Pal Sanjay"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:text="Gaurav Matani"
+                android:textColor="#ffffff"
+                android:textSize="20dp"/>
+        </TableRow>
+
+    </TableLayout>
+    <TableLayout
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:id="@+id/event2"
+
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/pass2"
+        android:layout_alignStart="@+id/pass2">
+        <TableRow>
+            <TextView
+                android:text="7276997800"
+                android:textColor="#030c37"
+                android:layout_width="200dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:text="8839181689"
+                android:textColor="#030c37"
+                android:layout_width="200dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"/>
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textSize="30dp"
+        android:text="Version Related Queries"
+        android:gravity="center"
+        android:foregroundGravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/event1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TableLayout
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:id="@+id/ccc1"
+        android:background="#030c37"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@+id/ccc2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TableRow>
+            <TextView
+                android:layout_width="200dp"
+                android:text="Amit Gupta"
+
+                android:textColor="#ffffff"
+                android:textSize="20dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:text="Ravi Kumar"
+                android:textColor="#ffffff"
+                android:textSize="20dp"/>
+        </TableRow>
+
+    </TableLayout>
+    <TableLayout
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:id="@+id/ccc2"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="91dp"
+        android:layout_below="@+id/event2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+        <TableRow>
+            <TextView
+                android:text="9468099899"
+                android:textColor="#030c37"
+                android:layout_width="200dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:text="9074345617"
+                android:textColor="#030c37"
+                android:layout_width="200dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"/>
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textSize="30dp"
+        android:text="Hospitality Related Queries"
+        android:gravity="center"
+        android:foregroundGravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/ccc1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TableLayout
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:id="@+id/hospi1"
+        android:background="#030c37"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp">
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="200dp"
+                android:text="Mahendra Pal"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:text="Jitendra Mahor"
+                         android:textColor="#ffffff"
+                android:textSize="20dp"/>
+        </TableRow>
+
+    </TableLayout>
+    <TableLayout
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:id="@+id/hospi2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/ccc2"
+        android:layout_alignStart="@+id/ccc2">
+        <TableRow>
+            <TextView
+                android:text="9521463929"
+                android:textColor="#030c37"
+                android:layout_width="200dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:text="8269559259"
+                android:textColor="#030c37"
+                android:layout_width="200dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"/>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+</RelativeLayout>

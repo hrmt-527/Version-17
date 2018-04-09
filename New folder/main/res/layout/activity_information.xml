@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#030c37"
+    android:id="@+id/registration"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#030c37"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="IMPORTANT INFORMATION"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dec"
+                android:layout_width="match_parent"
+
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+                android:text="1. Only one registratioin per college is allowed."
+                android:textColor="#2FDBFC"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/two"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/dec"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="2. Minimum 3 participants have to register."
+                android:textColor="#2FDBFC"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/three"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/two"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="3. The Details of the Participants must be those who will be participating in the NIT,Trichy
+"
+                android:textColor="#2FDBFC"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/four"
+                android:layout_width="match_parent"
+
+                android:layout_height="50dp"
+                android:layout_below="@+id/three"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="4. Keep the passkey secure as it will be needed in the events"
+                android:textColor="#2FDBFC"
+                android:textSize="20dp" />
+
+            <TableLayout
+
+                android:id="@+id/pass1"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_alignLeft="@+id/dec"
+                android:layout_alignStart="@+id/dec"
+                android:layout_alignTop="@+id/pass2"
+                >
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:text="Vikash Magnani"
+
+                        android:textColor="#ffffff"
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:text="Hrithik Chouhan"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/passkey_info"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/four"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="FOR PASS KEY"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:id="@+id/pass2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+
+                android:layout_below="@+id/passkey_info"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/pass1"
+                android:layout_toRightOf="@+id/pass1">
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="200dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="9571484108"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="15dp"
+                        android:text="9425070830"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp" />
+                </TableRow>
+            </TableLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
