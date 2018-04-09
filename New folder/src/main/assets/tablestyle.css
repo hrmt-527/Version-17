@@ -1,0 +1,46 @@
+
+
+
+
+
+/*** Table Styles **/
+
+.table-fill {
+ border-radius:5px;
+
+  border-collapse: collapse;
+  height: 60px;
+  margin: auto;
+ 
+  padding:5px;
+  width: 100%;
+  }
+ 
+  
+  th
+  {
+
+
+
+  color:#fff;
+  background-color: #212121;
+    
+  }
+tr {
+  border-top: 1px solid #fff;
+  border-bottom-: 2px solid #fff;
+  color:#fff;
+  font-size:20px;
+  font-weight:normal;
+  
+}
+ 
+ td
+ {
+  font-size: 18px;
+ }
+ .myfont1 td
+ {
+  font-size: 20px;
+ }
+ 
